@@ -1,0 +1,26 @@
+body{
+     background:#d9ecff;
+     font-family:sans-serif;
+     text-align:center;  
+}
+
+.box{
+    width:500px;
+    margin:40px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+botton{
+  padding:10px 20px;
+  font-size:18px;
+  background:#3d7eff;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+botton:hover{
+    background:#245edb;
+}
