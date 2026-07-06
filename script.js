@@ -12,3 +12,18 @@ function board(){
   document.getElementById("message").innerHTML=
     "黒板には「本棚を探せ」と書かれている。";
 }
+
+function bookshelf(){
+  document.getElementById("message").innerHTML=
+    "本の間から証拠を見つけた！";
+}
+
+function computer(){
+  document.getElementById("message").innerHTML=
+    "防犯カメラには生徒の姿が映っていた！";
+}
+
+function librarian(){
+  document.getElementById("message").innerHTML=
+    "「今日は一人の生徒が慌てていました。」";
+}
