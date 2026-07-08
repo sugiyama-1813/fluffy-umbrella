@@ -13,18 +13,31 @@
       <button onclick="answer('先生')"> 先生</button> 
       <button onclick="answer('生徒')"> 生徒</button> 
       <button onclick="answer('校長先生')">校長先生</button> 
+    
+      <hr>
+      
+      <h2 id="result"></h2>
       
       <p id="message"></p>
 
+      <a href="index.html">
+        <button id="restart" style="display:none;">
+          もう一度選択する
+        </button>
+      </a>
+      
     </div>
     <script>
       function answer(name){
         if(name=="生徒"){
-          document.getElementById("message").innerHTML="正解！卒業証書を取り返した";
+          document.getElementById("result").innerHTML="GAME CLEAR!!"+
+          document.getElementById("message").innerHTML="卒業証書を取り返した!!<br>無事に卒業式を迎えられます!!";
         }
         else{
-          document.getElementById("message").innerHTML="不正解！ゲームオーバー";
+          document.getElementById("result").innerHTML="GAME OVER";
+          document.getElementById("message").innerHTML="犯人ではありませんでした....。もう一度挑戦しよう!";
         }
+        document.getElementById("result").style.display="inline";
       }
     </script>
   </body>
