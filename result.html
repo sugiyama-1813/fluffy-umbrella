@@ -10,8 +10,8 @@
     <div class="container">
       <h1>犯人はだれ？</h1> 
       <img src="images/classroom.jpg" width="350"=犯人> 
-      <button onclick="answer('先生')"> 先生</button> 
-      <button onclick="answer('生徒')"> 生徒</button> 
+      <button onclick="answer('先生')"> 先生</button> <br><br>
+      <button onclick="answer('生徒')"> 生徒</button> <br><br>
       <button onclick="answer('校長先生')">校長先生</button> 
     
       <hr>
@@ -29,13 +29,13 @@
     </div>
     <script>
       function answer(name){
-        if(name=="生徒"){
-          document.getElementById("result").innerHTML="GAME CLEAR!!"+
+        if(name === "生徒"){
+          document.getElementById("result").innerHTML="GAME CLEAR!!";
           document.getElementById("message").innerHTML="卒業証書を取り返した!!<br>無事に卒業式を迎えられます!!";
         }
         else{
           document.getElementById("result").innerHTML="GAME OVER";
-          document.getElementById("message").innerHTML="犯人ではありませんでした....。もう一度挑戦しよう!";
+          document.getElementById("message").innerHTML="犯人ではなかった....。<br>もう一度挑戦しよう!";
         }
         document.getElementById("result").style.display="inline";
       }
