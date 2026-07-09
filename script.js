@@ -1,3 +1,6 @@
+let key = false;
+let memo = false;
+
 function desk(){
   document.getElementById("message").innerHTML=
     "メモを見つけた！「図書館を調べろ」";
@@ -13,6 +16,14 @@ function board(){
     "黒板には「本棚を探せ」と書かれている。";
 }
 
+function goLibrary(){
+  dlocation.herf="library.html";
+    "本の間から証拠を見つけた！";
+  }
+  else{
+    alert("鍵がないので杜預関羽行けません!");
+  }
+}
 function bookshelf(){
   document.getElementById("message").innerHTML=
     "本の間から証拠を見つけた！";
