@@ -3,13 +3,17 @@ let memo = false;
 
 function desk(){
   document.getElementById("message").innerHTML=
-    "メモを見つけた！「図書館を調べろ」";
+    "メモを見つけた！「図書館に行け」";
+  document.getElementById("itemMemo").innerHTML=
+    "メモ:持っている";
 }
 
 function locker(){
   key = true;
   document.getElementById("message").innerHTML=
     "ロッカーから鍵を見つけて、手に入れた！";
+   document.getElementById("itemKey").innerHTML=
+    "鍵:持っている";
 }
 
 function board(){
