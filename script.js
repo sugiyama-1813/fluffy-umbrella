@@ -7,8 +7,9 @@ function desk(){
 }
 
 function locker(){
+  key = true;
   document.getElementById("message").innerHTML=
-    "ロッカーから鍵を見つけた！";
+    "ロッカーから鍵を見つけて、手に入れた！";
 }
 
 function board(){
@@ -17,13 +18,12 @@ function board(){
 }
 
 function goLibrary(){
-  dlocation.herf="library.html";
-    "本の間から証拠を見つけた！";
+  if(key){
+      location.href = "library.html";
+  }else{
+    alert("先にロッカーを調べて鍵をゲットしよう!");
   }
-  else{
-    alert("鍵がないので杜預関羽行けません!");
-  }
-}
+} 
 function bookshelf(){
   document.getElementById("message").innerHTML=
     "本の間から証拠を見つけた！";
@@ -36,5 +36,5 @@ function computer(){
 
 function librarian(){
   document.getElementById("message").innerHTML=
-    "「今日は一人の生徒が慌てていました。」";
+    "司書さん「今日は一人の生徒が慌てていました。」";
 }
