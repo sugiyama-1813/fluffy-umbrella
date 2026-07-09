@@ -21,7 +21,7 @@ function goLibrary(){
   if(key){
       location.href = "library.html";
   }else{
-    alert("先にロッカーを調べて鍵をゲットしよう!");
+    alert("鍵が閉まってるみたい..教室を探索してみよう!");
   }
 } 
 function bookshelf(){
