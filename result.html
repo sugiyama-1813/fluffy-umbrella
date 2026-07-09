@@ -31,7 +31,14 @@
       function answer(name){
         if(name === "生徒"){
           document.getElementById("result").innerHTML="GAME CLEAR!!";
-          document.getElementById("message").innerHTML="卒業証書を取り返した!!<br>無事に卒業式を迎えられます!!";
+          document.getElementById("message").innerHTML=
+            "<h2>おめでとう!</h2>"+
+            "<p>無事に卒業式を迎えられる!!</P>"+
+            "<hr>"+
+            "<p>メモ：取得済み</p>"+
+            "<p>鍵：取得済み</p>"+
+            "<p>証拠：取得済み</p>"+
+            "<h3>名探偵ランク:S</h3>";            
         }
         else{
           document.getElementById("result").innerHTML="GAME OVER";
