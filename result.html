@@ -29,25 +29,7 @@
     </div>
     <script>
       function answer(name){
-        let score = 0;
-        if(memo) score++;
-        if(key) score++;
-        if(evidence) score++;
-
-        let rank = "";
-
-        if(score == 3){
-          rank = "S";
-        }
-        else if(score == 2){
-          rank = "B";
-        }
-        else if(score == 1){
-          rank = "C";
-        }
-        else{
-          rank = "D";
-        }
+      
         if(name === "生徒"){
           document.getElementById("result").innerHTML="GAME CLEAR!!";
           document.getElementById("message").innerHTML=
@@ -57,19 +39,18 @@
             "<p>メモ：取得済み</p>"+
             "<p>鍵：取得済み</p>"+
             "<p>証拠：取得済み</p>"+
-            "<p>探偵度：<b>" + rank + "</b></p>";
+           
    }
-   else{
-      document.getElementById("result").innerHTML="証拠不足";
-      document.getElementById("message").innerHTML="生徒を疑ったが、決定的な証拠が足りなかった...。";
-                                                        "探偵度：<b>" + rank + "</b>"; 
-   }
+   else if(name === "先生"){
+      document.getElementById("result").innerHTML="GAME OVER";
+      document.getElementById("message").innerHTML="犯人ではなかった...。";
+                                                       
 }
       
 else{
     document.getElementById("result").innerHTML="GAME OVER";
     document.getElementById("message").innerHTML="犯人ではなかった....。<br>もう一度挑戦しよう!<br>" + 
-                                                 "探偵度：<b>" + rank + "</b>";   
+                                                    
     }
       
         document.getElementById("result").style.display="inline-block";
