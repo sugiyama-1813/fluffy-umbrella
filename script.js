@@ -1,7 +1,9 @@
 let key = false;
 let memo = false;
+let evidence = false;
 
 function desk(){
+  memo = true;
   document.getElementById("message").innerHTML=
     "メモを見つけた！「図書館に行け」";
   document.getElementById("itemMemo").innerHTML=
@@ -29,6 +31,7 @@ function goLibrary(){
   }
 } 
 function bookshelf(){
+  evidence = true;
   document.getElementById("message").innerHTML=
     "本の間から証拠を見つけた！";
 }
