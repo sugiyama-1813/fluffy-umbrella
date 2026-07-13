@@ -31,13 +31,17 @@
       function answer(name){
       
         if(name === "生徒"){
+          let memo = localStorage.getItem("memo");
+          let key = localStorage.getItem("key");
+          let evidence = localStorage.getItem("evidence");
+          
           document.getElementById("result").innerHTML="GAME CLEAR!!";
           document.getElementById("message").innerHTML=
             "<h2>おめでとう!</h2>"+
             "<p>卒業証書を取り返した!!</p>"+
-            "<p>メモ：取得済み</p>"+
-            "<p>鍵：取得済み</p>"+
-            "<p>証拠：取得済み</p>";
+            "<p>メモ：" + (memo ? "取得済み" :"未取得")</p>"+
+            "<p>鍵：" + (key ? "取得済み" :"未取得")</p>"+
+            "<p>証拠：" + (evidence ? "取得済み" :"未取得")</p>"+
            
    }
    else if(name === "先生"){
