@@ -54,21 +54,25 @@
             "<h2>おめでとう!</h2>"+
             "<p>卒業証書を取り返した!!</P>"+
             "<hr>"+
-            "<p>探偵度：<b>" + rank + "</b></p>"+
+            "<p>メモ：取得済み</p>"+
             "<p>鍵：取得済み</p>"+
-            "<p>証拠：取得済み</p>"+         
+            "<p>証拠：取得済み</p>"+
+            "<p>探偵度：<b>" + rank + "</b></p>";
    }
    else{
-          document.getElementById("result").innerHTML="証拠不足";
-          document.getElementById("message").innerHTML="生徒を疑ったが、決定的な証拠が足りなかった...。";
+      document.getElementById("result").innerHTML="証拠不足";
+      document.getElementById("message").innerHTML="生徒を疑ったが、決定的な証拠が足りなかった...。";
+                                                        "探偵度：<b>" + rank + "</b>"; 
    }
 }
       
 else{
-          document.getElementById("result").innerHTML="GAME OVER";
-          document.getElementById("message").innerHTML="犯人ではなかった....。<br>もう一度挑戦しよう!<br>探偵度:<b>" + rank + "</b>";
-        }
-        document.getElementById("result").style.display="inline";
+    document.getElementById("result").innerHTML="GAME OVER";
+    document.getElementById("message").innerHTML="犯人ではなかった....。<br>もう一度挑戦しよう!<br>" + 
+                                                 "探偵度：<b>" + rank + "</b>";   
+    }
+      
+        document.getElementById("result").style.display="inline-block";
       }
     </script>
   </body>
