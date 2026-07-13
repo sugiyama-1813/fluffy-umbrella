@@ -4,6 +4,7 @@ let evidence = false;
 
 function desk(){
   memo = true;
+  localStorage.setItem("memo","true");
   document.getElementById("message").innerHTML=
     "メモを見つけた！「図書館に行け」";
   document.getElementById("itemMemo").innerHTML=
@@ -12,6 +13,7 @@ function desk(){
 
 function locker(){
   key = true;
+  localStorage.setItem("key","true");
   document.getElementById("message").innerHTML=
     "ロッカーから鍵を見つけて、手に入れた！";
    document.getElementById("itemKey").innerHTML=
@@ -32,6 +34,7 @@ function goLibrary(){
 } 
 function bookshelf(){
   evidence = true;
+  localStorage.setItem("evidence","true");
   document.getElementById("message").innerHTML=
     "本の間から証拠を見つけた！";
 }
